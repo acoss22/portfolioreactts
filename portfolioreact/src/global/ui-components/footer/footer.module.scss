@@ -1,8 +1,10 @@
+@import "./../../../styles//_variables";
+
 .container {
     display: flex;
     align-self: center;
     justify-content: center;
-    background-color: #20232a;
+    background-color: $header-background-color;
     color: #ffffff;
     position: absolute;
     bottom: 0;
