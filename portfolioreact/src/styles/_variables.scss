@@ -1,15 +1,15 @@
-//FONT
+//HEADER
 
-$font-family: 'Verdana, sans-serif';
-
-//font-title
-$font-title-size:  3.5rem;
+$font-header-size:  3rem;
 $font-title-weight: 600;
 
+//FOOTER
+
+$font-footer-size: 1.5rem;
+
+
+//MAIN
+
+$font-main-size: 2rem;
 //COLORS
-
 $header-background-color: #20232a;
-
-//HEIGHTS
-$height-header: 5rem;
-$height-main-content: calc(100% - $height-header - $height-header);
