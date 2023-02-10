@@ -10,15 +10,17 @@
   left: 0;
 
   .container {
-    padding: 2rem;
+    height: 5rem;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .wrapper {
-      display: flex;
-
       .link {
         .title {
           font-size: $font-title-size;
+          font-weight: $font-title-weight;
         }
       }
     }
