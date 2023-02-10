@@ -3,14 +3,12 @@
 .header {
   background-color: $header-background-color;
   color: #ffffff;
-  position: fixed;
   z-index: 1;
   width: 100%;
   top: 0;
   left: 0;
 
   .container {
-    height: 5rem;
     margin: auto;
     display: flex;
     align-items: center;

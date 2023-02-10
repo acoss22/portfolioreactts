@@ -1,7 +1,9 @@
+import styles from './landingpage.module.scss';
+
 const LandingPageComponent = () : any => {
 
     return(
-        <main>
+        <main className={styles.main}>
              main content here
         </main>
     )
