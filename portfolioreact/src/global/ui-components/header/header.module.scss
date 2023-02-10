@@ -1,0 +1,26 @@
+@import "./../../../styles//_variables";
+
+.header {
+  background-color: #20232a;
+  color: #ffffff;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  .container {
+    padding: 2rem;
+    margin: auto;
+
+    .wrapper {
+      display: flex;
+
+      .link {
+        .title {
+          font-size: $font-title-size;
+        }
+      }
+    }
+  }
+}
