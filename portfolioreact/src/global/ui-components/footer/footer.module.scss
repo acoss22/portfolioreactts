@@ -1,13 +1,13 @@
 @import "./../../../styles//_variables";
 
 .container {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    background-color: $header-background-color;
-    color: #ffffff;
-    width: 100%;
-
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  background-color: $header-background-color;
+  color: #ffffff;
+  width: 100%;
+  height: 20rem;
 
   .footer {
     width: 100%;
@@ -15,10 +15,17 @@
     align-items: center;
     justify-content: space-between;
     font-size: $font-footer-size;
-    margin: 1rem 0;
+    padding: 5rem;
   }
 
-  .link{
+  .link {
+    margin: 0 2rem;
     color: white;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .container .footer {
+    font-size: $font-tablet-size;
   }
 }

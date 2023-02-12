@@ -3,13 +3,12 @@
 .main {
   font-size: $font-main-size;
   padding: 2rem;
-  margin: auto;
+  max-width: 1260px;
 
   .container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 3rem;
     padding: 4rem 0;
 
     .left {
@@ -21,7 +20,7 @@
 
     .right {
       .img {
-        max-width: 50rem;
+        max-width: 80%;
       }
     }
   }
@@ -32,8 +31,7 @@
     align-items: center;
     justify-content: center;
 
-
-    .cardWrapper{
+    .cardWrapper {
       display: flex;
       flex-direction: row;
       width: 100%;
@@ -41,7 +39,6 @@
       align-content: center;
       justify-content: center;
       margin: 2rem 0;
-
     }
 
     .projectsTitle {
@@ -52,6 +49,56 @@
     .row {
       display: flex;
       flex-direction: row;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    font-size: $font-tablet-size;
+
+    .wrapper {
+      .cardWrapper {
+        display: flex;
+        flex-direction: column;
+      }
+      .projectsTitle {
+        font-size: 2rem;
+        font-weight: 600;
+      }
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .left {
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 0 2rem;
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        .img {
+          max-width: 50%;
+        }
+      }
     }
   }
 }

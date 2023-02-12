@@ -11,7 +11,14 @@
     }
 
     .items {
-    
+        margin: 2rem 0;
     }
 
 }
+
+@media screen and (max-width: 990px) {
+    .column {
+      font-size: $font-tablet-size;
+    }
+  }
+  

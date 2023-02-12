@@ -6,17 +6,19 @@ import GenericListComponent from "../../global/ui-components/genericList/Generic
 const LandingPageComponent = (): any => {
   return (
     <main className={styles.main}>
+      <div className={styles.wrapper}>
+        <span className={styles.projectsTitle}>About me</span>
+      </div>
       <div className={styles.container}>
         <div className={styles.left}>
           <div> Hi, my name is Ana. </div>
           <div> I'm a Frontend engineer, based in Lisbon.</div>
           <div>
-            I specialize in using web techonologies to create responsive Hybrid
+            I specialize in web techonologies to create responsive Hybrid
             Mobile/Web Applications.
           </div>
           <div>
-            I am consistently learning new ways to increase my skillset even it
-            goes out of the frontend world!
+            I am consistently learning ways to increase my skillset.
           </div>
         </div>
         <div className={styles.right}>
@@ -27,7 +29,6 @@ const LandingPageComponent = (): any => {
           />
         </div>
       </div>
-
       <div className={styles.wrapper}>
         <span className={styles.projectsTitle}>Projects</span>
         <div className={styles.cardWrapper}>
@@ -37,62 +38,69 @@ const LandingPageComponent = (): any => {
             description="Japanese Keyboard React Application to Write in Hiragana, Katakana and Kanji"
             tags="#React #SCSS"
             links={[
-              <CCardLink className={styles.marginRight} href="#">
+              <CCardLink
+                className={styles.marginRight}
+                href="https://github.com/acoss22/japanese_keyboard"
+              >
                 GITHUB
               </CCardLink>,
-              <CCardLink href="#">DEMO</CCardLink>,
+              <CCardLink href="http://japanese-keyboard.s3-website-us-east-1.amazonaws.com/">
+                DEMO
+              </CCardLink>,
             ]}
           />
 
           <GenericCardComponent
             imageUrl={require("../../assets/img/wishlist.png")}
             title="Wishlist"
-            description="An app to show what gifts you would like! Made with React & redux."
+            description="An app to show what gifts you would like!ssssss"
             tags="#React #JavaScript #SCSS"
             links={[
-              <CCardLink className={styles.marginRight} href="#">
+              <CCardLink
+                className={styles.marginRight}
+                href="https://github.com/acoss22/wishlist"
+              >
                 GITHUB
               </CCardLink>,
-              <CCardLink href="#">DEMO</CCardLink>,
+              <CCardLink href="http://wishlist-version-a.s3-website.eu-west-3.amazonaws.com/">
+                DEMO
+              </CCardLink>,
             ]}
           />
 
           <GenericCardComponent
             imageUrl={require("../../assets/img/imagesearch.png")}
             title="Image Search"
-            description="Write a word and see the result of images! Try 'cat' or 'dog' for example! Made with React & redux."
+            description="Write a word and see the result! Try 'cat'!"
             tags="#React #JavaScript #SCSS"
             links={[
-              <CCardLink className={styles.marginRight} href="#">
+              <CCardLink
+                className={styles.marginRight}
+                href="https://github.com/acoss22/imagesearch"
+              >
                 GITHUB
               </CCardLink>,
-              <CCardLink href="#">DEMO</CCardLink>,
+              <CCardLink href="http://image-search-react-app.s3-website-us-east-1.amazonaws.com/">
+                DEMO
+              </CCardLink>,
             ]}
           />
 
           <GenericCardComponent
             imageUrl={require("../../assets/img/oldportfolio.png")}
             title="Old Portolio"
-            description="My old portfolio! Made with Angular."
+            description="My old portfolio!"
             tags="#Angular #TypeScript #SCSS"
             links={[
-              <CCardLink className={styles.marginRight} href="#">
+              <CCardLink
+                className={styles.marginRight}
+                href="https://github.com/acoss22/new_portfolio_from_zero_angular"
+              >
                 GITHUB
               </CCardLink>,
-              <CCardLink href="#">DEMO</CCardLink>,
-            ]}
-          />
-
-          <GenericCardComponent
-            imageUrl={require("../../assets/img/evenolderportfolio.png")}
-            title="Even Older Portolio"
-            description="My old portfolio! Made with Angular."
-            tags="#Angular #TypeScript #SCSS"
-            links={[
-              <CCardLink className={styles.marginRight} href="#">
-                GITHUB
+              <CCardLink href="http://portfolioangular2022.s3-website-us-east-1.amazonaws.com/home">
+                DEMO
               </CCardLink>,
-              <CCardLink href="#">DEMO</CCardLink>,
             ]}
           />
         </div>
@@ -101,58 +109,65 @@ const LandingPageComponent = (): any => {
       <div className={styles.wrapper}>
         <span className={styles.projectsTitle}>Skillset</span>
         <div className={styles.cardWrapper}>
-        <GenericListComponent
-          title="Languages & DBs"
-          items={["HTML", "CSS", "JS", "TS", "MySQL", "MongoDB"]}
-        />
-        <GenericListComponent
-          title="Frameworks & Libs"
-          items={[
-            "React",
-            "Angular2+",
-            "AngularJS",
-            "Svelte",
-            "Mendix",
-            "NodeJS Express",
-            "JQuery",
-            "SASS",
-            "PWA",
-            "Ionic",
-            "Cordova",
-            "Redux",
-          ]}
-        />
+          <GenericListComponent
+            title="Languages & DBs"
+            items={["HTML", "CSS", "JS", "TS", "MySQL", "MongoDB"]}
+          />
+          <GenericListComponent
+            title="Frameworks & Libs"
+            items={[
+              "SASS",
+              "React",
+              "Angular2+",
+              "AngularJS",
+              "Svelte",
+              "Mendix",
+              "NodeJS Express",
+              "JQuery",
+              "PWA",
+              "Ionic",
+              "Cordova",
+              "Redux",
+            ]}
+          />
 
-        <GenericListComponent
-          title="Tools and Ways of Working"
-          items={[
-            "VSCode",
-            "Confluence",
-            "Bitbucket",
-            "JIRA",
-            "SCRUM/Agile",
-            "CI/CD",
-            "GIT",
-            "Slack",
-            "Jenkins",
-            "Docker",
-            "SonarQube",
-            "Figma",
-            "Maze",
-            "ARIS",
-            "Enterprise WebMethods",
-          ]}
-        />
+          <GenericListComponent
+            title="Tools and Ways of Working"
+            items={[
+              "Atlassian Tools",
+              "SCRUM",
+              "GIT",
+              "Jenkins",
+              "Docker",
+              "SonarQube",
+              "Figma",
+              "Maze",
+              "ARIS",
+              "Enterprise WebMethods",
+            ]}
+          />
 
-        <GenericListComponent
-          title="Cloud"
-          items={["AWS Registry", "AWS Lambda", "AWS API Gateway"]}
-        />
-        <GenericListComponent
-          title="Testing"
-          items={["Enzyme", "Jest", "ReactTesting Library", "Karma & Jasmine"]}
-        />
-         </div>
+          <GenericListComponent
+            title="Cloud"
+            items={[
+              "AWS Registry",
+              "AWS Lambda",
+              "AWS API Gateway",
+              "S3 Buckets",
+              "EC2",
+              "Route53",
+            ]}
+          />
+          <GenericListComponent
+            title="Testing"
+            items={[
+              "Enzyme",
+              "Jest",
+              "React Testing Library",
+              "Karma & Jasmine (Angular)",
+            ]}
+          />
+        </div>
       </div>
     </main>
   );
