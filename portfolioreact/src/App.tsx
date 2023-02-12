@@ -1,4 +1,4 @@
-import LandingPageComponent from "./components/LandingPageComponent";
+import LandingPageComponent from "./components/LandingPage/LandingPageComponent";
 import FooterComponent from "./global/ui-components/footer/FooterComponent";
 import HeaderComponent from "./global/ui-components/header/HeaderComponent";
 import styles from './app.module.scss';
