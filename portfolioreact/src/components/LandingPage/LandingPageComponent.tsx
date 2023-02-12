@@ -1,4 +1,5 @@
 import styles from "./landingpage.module.scss";
+import { CCard, CCardImage, CCardBody, CCardTitle, CCardText, CListGroup, CListGroupItem, CCardLink} from '@coreui/react';
 
 const LandingPageComponent = (): any => {
   return (
@@ -26,6 +27,28 @@ const LandingPageComponent = (): any => {
 
       <div className={styles.wrapper}>
         <span className={styles.projectsTitle}>Projects</span>
+        <div className={styles.project}>
+        <CCard>
+          <CCardImage orientation="top" className={styles.img} src={require("../../assets/img/jp.png")} />
+          <CCardBody>
+            <CCardTitle className={styles.projectName}>Japanese Keyboard</CCardTitle>
+            <CCardText>
+            <div className={styles.description}>
+            Japanese Keyboard React Application to Write in Hiragana, Katakana
+            and Kanji
+              </div>
+            </CCardText>
+          </CCardBody>
+          <CListGroup flush className={styles.tagList}>
+            <CListGroupItem className={styles.tags}>#React #SCSS</CListGroupItem>
+          </CListGroup>
+          <CCardBody>
+            <CCardLink className={styles.marginRight} href="#">GITHUB</CCardLink>
+            <CCardLink href="#">DEMO</CCardLink>
+          </CCardBody>
+        </CCard>
+        </div>
+
         <div className={styles.project}>
           <div className={styles.projectName}>Japanese Keyboard</div>
           <div className={styles.description}>
