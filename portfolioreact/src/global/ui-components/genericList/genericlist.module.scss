@@ -1,0 +1,17 @@
+@import "../../../styles/_variables.scss";
+
+.column{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+
+    .title{
+        font-weight: $font-title-weight;
+    }
+
+    .items {
+    
+    }
+
+}

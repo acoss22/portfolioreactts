@@ -1,0 +1,54 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 0;
+  margin: 2rem 0.5rem;
+  width: 40rem;
+  box-shadow: 9px 7px 40px -6px rgb(0 0 0 / 25%);
+  border-radius: 0.5rem;
+
+  .marginRight {
+    margin-right: 2rem;
+  }
+
+  .projectName {
+    font-weight: 600;
+  }
+
+  .description {
+    min-height: 10rem;
+  }
+
+  .tagList {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+
+    .tags {
+      font-weight: 600;
+      list-style-type: none;
+    }
+  }
+
+  .img {
+    width: 90%;
+    object-fit: contain;
+    aspect-ratio: 3/2;
+  }
+
+  .links {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
