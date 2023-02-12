@@ -20,6 +20,7 @@ const LandingPageComponent = (): any => {
         <div className={styles.right}>
           <img
             className={styles.img}
+            alt= "photograph of Ana"
             src={require("../../assets/img/madeira.jpg")}
           />
         </div>
@@ -29,7 +30,7 @@ const LandingPageComponent = (): any => {
         <span className={styles.projectsTitle}>Projects</span>
         <div className={styles.project}>
         <CCard>
-          <CCardImage orientation="top" className={styles.img} src={require("../../assets/img/jp.png")} />
+          <CCardImage orientation="top" className={styles.img} alt="japanese keyboard app" src={require("../../assets/img/jp.png")} />
           <CCardBody>
             <CCardTitle className={styles.projectName}>Japanese Keyboard</CCardTitle>
             <CCardText>
@@ -49,72 +50,99 @@ const LandingPageComponent = (): any => {
         </CCard>
         </div>
 
+        <div className={styles.wrapper}>
         <div className={styles.project}>
-          <div className={styles.projectName}>Japanese Keyboard</div>
-          <div className={styles.description}>
-            Japanese Keyboard React Application to Write in Hiragana, Katakana
-            and Kanji
-          </div>
-          <div className={styles.imageContainer}>
-            <img
-              className={styles.img}
-              src={require("../../assets/img/jp.png")}
-            />
-          </div>
-          <div className={styles.tags}>#React #SCSS</div>
-        </div>
-        <div className={styles.project}>
-          <div className={styles.projectName}>Wishlist</div>
-          <div className={styles.description}>
+        <CCard>
+          <CCardImage orientation="top" className={styles.img} alt="wishlist app" src={require("../../assets/img/wishlist.png")} />
+          <CCardBody>
+            <CCardTitle className={styles.projectName}>Japanese Keyboard</CCardTitle>
+            <CCardText>
+            <div className={styles.description}>
             An app to show what gifts you would like! Made with React & redux.
-          </div>
-          <div className={styles.imageContainer}>
-            <img
-              className={styles.img}
-              src={require("../../assets/img/wishlist.png")}
-            />
-            <div className={styles.tags}>#React #JavaScript #SCSS</div>
-          </div>
-          <div className={styles.project}>
-            <div className={styles.projectName}>Image Search</div>
+              </div>
+            </CCardText>
+          </CCardBody>
+          <CListGroup flush className={styles.tagList}>
+            <CListGroupItem className={styles.tags}>#React #JavaScript #SCSS</CListGroupItem>
+          </CListGroup>
+          <CCardBody>
+            <CCardLink className={styles.marginRight} href="#">GITHUB</CCardLink>
+            <CCardLink href="#">DEMO</CCardLink>
+          </CCardBody>
+        </CCard>
+        </div>
+    
+        <div className={styles.wrapper}>
+        <div className={styles.project}>
+        <CCard>
+          <CCardImage orientation="top" className={styles.img} alt="image search app" src={require("../../assets/img/imagesearch.png")} />
+          <CCardBody>
+            <CCardTitle className={styles.projectName}>Image Search</CCardTitle>
+            <CCardText>
             <div className={styles.description}>
-              Write a word and see the result of images! Try 'cat' or 'dog' for
+           Write a word and see the result of images! Try 'cat' or 'dog' for
               example! Made with React & redux.
-            </div>
-            <div className={styles.imageContainer}>
-              <img
-                className={styles.img}
-                src={require("../../assets/img/imagesearch.png")}
-              />
-            </div>
-            <div className={styles.tags}>#React #JavaScript</div>
-          </div>
-          <div className={styles.project}>
-            <div className={styles.projectName}>Old Portolio</div>
+              </div>
+            </CCardText>
+          </CCardBody>
+          <CListGroup flush className={styles.tagList}>
+            <CListGroupItem className={styles.tags}>#React #JavaScript #SCSS</CListGroupItem>
+          </CListGroup>
+          <CCardBody>
+            <CCardLink className={styles.marginRight} href="#">GITHUB</CCardLink>
+            <CCardLink href="#">DEMO</CCardLink>
+          </CCardBody>
+        </CCard>
+        </div>
+    
+        <div className={styles.wrapper}>
+        <div className={styles.project}>
+        <CCard>
+          <CCardImage orientation="top" className={styles.img} alt="old portfolio app" src={require("../../assets/img/oldportfolio.png")} />
+          <CCardBody>
+            <CCardTitle className={styles.projectName}>Old Portolio</CCardTitle>
+            <CCardText>
             <div className={styles.description}>
-              My old portfolio! Made with Angular.
-            </div>
-            <div className={styles.imageContainer}>
-              <img
-                className={styles.img}
-                src={require("../../assets/img/oldportfolio.png")}
-              />
-            </div>
-            <div className={styles.tags}>#Angular #TypeScript</div>
-          </div>
-          <div className={styles.project}>
-            <div className={styles.projectName}>Even Older Portolio</div>
+            My old portfolio! Made with Angular.
+              </div>
+            </CCardText>
+          </CCardBody>
+          <CListGroup flush className={styles.tagList}>
+            <CListGroupItem className={styles.tags}>#Angular #TypeScript #SCSS</CListGroupItem>
+          </CListGroup>
+          <CCardBody>
+            <CCardLink className={styles.marginRight} href="#">GITHUB</CCardLink>
+            <CCardLink href="#">DEMO</CCardLink>
+          </CCardBody>
+        </CCard>
+        </div>~
+
+        <div className={styles.wrapper}>
+        <div className={styles.project}>
+        <CCard>
+          <CCardImage orientation="top" className={styles.img} alt="old portfolio app" src={require("../../assets/img/evenolderportfolio.png")} />
+          <CCardBody>
+            <CCardTitle className={styles.projectName}>Even Older Portolio</CCardTitle>
+            <CCardText>
             <div className={styles.description}>
-              My old portfolio! Made with Angular.
-            </div>
-            <div className={styles.imageContainer}>
-              <img
-                className={styles.img}
-                src={require("../../assets/img/evenolderportfolio.png")}
-              />
-            </div>
-            <div className={styles.tags}>Angular #TypeScript</div>
-          </div>
+            My old portfolio! Made with Angular.
+              </div>
+            </CCardText>
+          </CCardBody>
+          <CListGroup flush className={styles.tagList}>
+            <CListGroupItem className={styles.tags}>#Angular #TypeScript #SCSS</CListGroupItem>
+          </CListGroup>
+          <CCardBody>
+            <CCardLink className={styles.marginRight} href="#">GITHUB</CCardLink>
+            <CCardLink href="#">DEMO</CCardLink>
+          </CCardBody>
+        </CCard>
+        </div>
+      
+        </div>
+          
+        </div>
+        </div>
         </div>
       </div>
 
