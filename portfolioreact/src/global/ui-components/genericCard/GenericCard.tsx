@@ -15,7 +15,7 @@ const GenericCardComponent: React.FC<Props> = ({imageUrl, title, description, ta
     } 
 
     return (
-        <CCard>
+        <CCard className={styles.card}>
             <div className={styles.project}>
               <CCardImage orientation="top" className={styles.img} src={imageUrl} />
               <CCardBody>

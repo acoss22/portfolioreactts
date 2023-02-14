@@ -6,31 +6,33 @@ import GenericListComponent from "../../global/ui-components/genericList/Generic
 const LandingPageComponent = (): any => {
   return (
     <main className={styles.main}>
-      <div className={styles.wrapper}>
-        <span className={styles.projectsTitle}>About me</span>
-      </div>
-      <div className={styles.container}>
-        <div className={styles.left}>
-          <div> Hi, my name is Ana. </div>
-          <div> I'm a Frontend engineer, based in Lisbon.</div>
-          <div>
-            I specialize in web techonologies to create responsive Hybrid
-            Mobile/Web Applications.
+      <div className={styles.aboutMe}>
+        <div className={styles.wrapper}>
+          <span className={styles.title}>About me</span>
+        </div>
+        <div className={styles.container}>
+          <div className={styles.left}>
+            <div> Hi, my name is Ana. </div>
+            <div> I'm a Frontend engineer, based in Lisbon.</div>
+            <div>
+              I specialize in web techonologies to create responsive Hybrid
+              Mobile/Web Applications.
+            </div>
+            <div>I am consistently learning ways to increase my skillset.</div>
           </div>
-          <div>
-            I am consistently learning ways to increase my skillset.
+          <div className={styles.right}>
+            <img
+              className={styles.img}
+              alt="photograph of Ana"
+              src={require("../../assets/img/madeira.jpg")}
+            />
           </div>
         </div>
-        <div className={styles.right}>
-          <img
-            className={styles.img}
-            alt="photograph of Ana"
-            src={require("../../assets/img/madeira.jpg")}
-          />
-        </div>
       </div>
+
+      <div className={styles.projects}>
       <div className={styles.wrapper}>
-        <span className={styles.projectsTitle}>Projects</span>
+        <span className={styles.title}>Projects</span>
         <div className={styles.cardWrapper}>
           <GenericCardComponent
             imageUrl={require("../../assets/img/jp.png")}
@@ -105,9 +107,11 @@ const LandingPageComponent = (): any => {
           />
         </div>
       </div>
-
+      </div>
+      
+      <div className={styles.skillset}>
       <div className={styles.wrapper}>
-        <span className={styles.projectsTitle}>Skillset</span>
+        <span className={styles.title}>Skillset</span>
         <div className={styles.cardWrapper}>
           <GenericListComponent
             title="Languages & DBs"
@@ -168,6 +172,7 @@ const LandingPageComponent = (): any => {
             ]}
           />
         </div>
+      </div>
       </div>
     </main>
   );

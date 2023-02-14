@@ -1,56 +1,59 @@
 @import "../../../styles/_variables.scss";
 
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem 0;
-  margin: 2rem 0.5rem;
-  width: 30rem;
-  box-shadow: 9px 7px 40px -6px rgb(0 0 0 / 25%);
-  border-radius: 0.5rem;
+.card {
 
-  .marginRight {
-    margin-right: 2rem;
-  }
+  padding: 0 1rem;
 
-  .projectName {
-    font-weight: 600;
-  }
-
-  .description {
-    min-height: 10rem;
-  }
-
-  .tagList {
+  .project {
+    border-radius: 2rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    align-items: center;
-    padding: 0;
+    width: 30rem;
+    box-shadow: 9px 7px 40px -6px rgb(0 0 0 / 25%);
 
-    .tags {
-      font-weight: 600;
-      list-style-type: none;
+    .marginRight {
+      margin-right: 2rem;
     }
-  }
 
-  .img {
-    width: 90%;
-    object-fit: contain;
-    aspect-ratio: 3/2;
-  }
+    .projectName {
+      font-weight: 600;
+    }
 
-  .links {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+    .description {
+      min-height: 10rem;
+    }
 
-    a {
-      text-decoration: none;
-      color: #000;
+    .tagList {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 0;
+
+      .tags {
+        font-weight: 600;
+        list-style-type: none;
+      }
+    }
+
+    .img {
+      width: 90%;
+      object-fit: contain;
+      aspect-ratio: 3/2;
+    }
+
+    .links {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+
+      a {
+        text-decoration: none;
+        color: #000;
+      }
     }
   }
 }
