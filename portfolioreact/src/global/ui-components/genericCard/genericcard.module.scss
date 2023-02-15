@@ -80,5 +80,9 @@
 @media screen and (max-width: 990px) {
   .project {
     font-size: $font-tablet-size;
+    width: 25rem;
+    .cardBody{
+      padding:0;
+    }
   }
 }
