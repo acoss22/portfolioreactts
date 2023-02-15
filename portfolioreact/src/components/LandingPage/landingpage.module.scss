@@ -22,6 +22,11 @@
     font-weight: 600;
   }
 
+  .bold:hover{
+    color: $color-dark-green;
+    text-shadow: 2px 2px #FFDEAD;
+  }
+
   .container {
     display: flex;
     flex-direction: row;
