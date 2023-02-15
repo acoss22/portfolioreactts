@@ -5,7 +5,7 @@
   width: 100%;
 
   .aboutMe {
-    padding: 5rem;
+    padding: 5rem 10rem;
   }
 
   .projects {
@@ -14,6 +14,10 @@
 
   .skillset {
     padding: 2rem;
+  }
+
+  .bold{
+    font-weight: 600;
   }
 
   .container {
@@ -33,7 +37,8 @@
       justify-content: center;
 
       .img {
-        max-width: 80%;
+        max-width: 60%;
+        border-radius: 10rem;
       }
     }
   }
@@ -50,7 +55,7 @@
       width: 100%;
       flex-wrap: wrap;
       align-content: center;
-      justify-content: center;
+      justify-content: space-evenly;
       padding: 4rem 0;
     }
 

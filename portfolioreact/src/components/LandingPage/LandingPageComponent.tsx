@@ -13,7 +13,7 @@ const LandingPageComponent = (): any => {
         <div className={styles.container}>
           <div className={styles.left}>
             <div> Hi, my name is Ana. </div>
-            <div> I'm a Frontend engineer, based in Lisbon.</div>
+            <div> I'm a <span className={styles.bold}>Frontend engineer</span> based in Lisbon.</div>
             <div>
               I specialize in web techonologies to create responsive Hybrid
               Mobile/Web Applications.
@@ -35,9 +35,9 @@ const LandingPageComponent = (): any => {
         <span className={styles.title}>Projects</span>
         <div className={styles.cardWrapper}>
           <GenericCardComponent
-            imageUrl={require("../../assets/img/jp.png")}
+            imageUrl={require("../../assets/img/500x500jp.png")}
             title="Japanese Keyboard"
-            description="Japanese Keyboard React Application to Write in Hiragana, Katakana and Kanji"
+            description="Write in Hiragana, Katakana and Kanji"
             tags="#React #SCSS"
             links={[
               <CCardLink
@@ -53,10 +53,10 @@ const LandingPageComponent = (): any => {
           />
 
           <GenericCardComponent
-            imageUrl={require("../../assets/img/wishlist.png")}
+            imageUrl={require("../../assets/img/500x500wishlist.png")}
             title="Wishlist"
-            description="An app to show what gifts you would like!ssssss"
-            tags="#React #JavaScript #SCSS"
+            description="An app to show what gifts you would like!"
+            tags="#React #JS #SCSS"
             links={[
               <CCardLink
                 className={styles.marginRight}
@@ -71,10 +71,10 @@ const LandingPageComponent = (): any => {
           />
 
           <GenericCardComponent
-            imageUrl={require("../../assets/img/imagesearch.png")}
+            imageUrl={require("../../assets/img/500x500imagesearch.png")}
             title="Image Search"
             description="Write a word and see the result! Try 'cat'!"
-            tags="#React #JavaScript #SCSS"
+            tags="#React #JS #SCSS"
             links={[
               <CCardLink
                 className={styles.marginRight}
@@ -89,10 +89,10 @@ const LandingPageComponent = (): any => {
           />
 
           <GenericCardComponent
-            imageUrl={require("../../assets/img/oldportfolio.png")}
+            imageUrl={require("../../assets/img/500x500portfolio.png")}
             title="Old Portolio"
-            description="My old portfolio!"
-            tags="#Angular #TypeScript #SCSS"
+            description="My old portfolio! Made in Angular!"
+            tags="#Angular #TS #SCSS"
             links={[
               <CCardLink
                 className={styles.marginRight}
@@ -114,11 +114,11 @@ const LandingPageComponent = (): any => {
         <span className={styles.title}>Skillset</span>
         <div className={styles.cardWrapper}>
           <GenericListComponent
-            title="Languages & DBs"
+            title="Languages"
             items={["HTML", "CSS", "JS", "TS", "MySQL", "MongoDB"]}
           />
           <GenericListComponent
-            title="Frameworks & Libs"
+            title="Frameworks"
             items={[
               "SASS",
               "React",
@@ -136,7 +136,7 @@ const LandingPageComponent = (): any => {
           />
 
           <GenericListComponent
-            title="Tools and Ways of Working"
+            title="Tools"
             items={[
               "Atlassian Tools",
               "SCRUM",
@@ -154,12 +154,20 @@ const LandingPageComponent = (): any => {
           <GenericListComponent
             title="Cloud"
             items={[
-              "AWS Registry",
-              "AWS Lambda",
-              "AWS API Gateway",
+              "IAM",
+              "Registry",
+              "Certificate Manager",
+              "Lambda",
+              "API Gateway",
               "S3 Buckets",
               "EC2",
               "Route53",
+              "CloudFront",
+              "Cognito",
+              "Code Artifact",
+              "Cloud Formation",
+              "KMS",
+              "Cloud Watch"
             ]}
           />
           <GenericListComponent
