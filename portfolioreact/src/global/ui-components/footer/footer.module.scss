@@ -21,7 +21,12 @@
   .link {
     margin: 0 2rem;
     color: white;
-  }
+
+    .link:hover{
+        fill: #FFDEAD;
+      }
+    }
+  
 }
 
 @media screen and (max-width: 990px) {

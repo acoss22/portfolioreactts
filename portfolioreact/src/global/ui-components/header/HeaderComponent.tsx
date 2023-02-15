@@ -6,7 +6,7 @@ const HeaderComponent = (): any => {
       <div className={styles.container}>
         <div className={styles.wrapper}>
             <div className={styles.link}>
-              <span className={styles.title}>Ana CSeq</span>
+              <span className={styles.title}>Ana CS</span>
             </div>
         </div>
       </div>
