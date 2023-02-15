@@ -84,6 +84,10 @@
     flex-direction: column;
     font-size: $font-tablet-size;
 
+    .aboutMe{
+      padding: 3rem 0rem;
+    }
+
     .wrapper {
       .cardWrapper {
         display: flex;
@@ -111,6 +115,12 @@
         text-align: center;
         margin-bottom: 2rem;
         padding: 0 2rem;
+
+        .quote{
+          width: 100%;
+          padding: 1rem 0;
+        }
+
       }
 
       .right {

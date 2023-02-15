@@ -12,13 +12,13 @@ const LandingPageComponent = (): any => {
         </div>
         <div className={styles.container}>
           <div className={styles.left}>
-            <div> Hi, my name is Ana. </div>
+            <div className={styles.quote}> Hi, my name is Ana. </div>
             <div> I'm a <span className={styles.bold}>Frontend engineer</span> based in Lisbon.</div>
-            <div>
-              I specialize in web techonologies to create responsive 
-              <span className={styles.bold}> Hybrid Mobile/Web Applications.</span>
+            <div className={styles.quote}>
+              I specialize in web techonologies to create responsive <span className={styles.bold}> Hybrid Mobile/Web Applications.</span>
             </div>
-            <div>I am consistently learning ways to increase my skillset.</div>
+            <div className={styles.quote}>
+              I am consistently learning ways to increase my skillset.</div>
           </div>
           <div className={styles.right}>
             <img
