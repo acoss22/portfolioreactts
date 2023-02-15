@@ -15,8 +15,8 @@ const LandingPageComponent = (): any => {
             <div> Hi, my name is Ana. </div>
             <div> I'm a <span className={styles.bold}>Frontend engineer</span> based in Lisbon.</div>
             <div>
-              I specialize in web techonologies to create responsive Hybrid
-              Mobile/Web Applications.
+              I specialize in web techonologies to create responsive 
+              <span className={styles.bold}> Hybrid Mobile/Web Applications.</span>
             </div>
             <div>I am consistently learning ways to increase my skillset.</div>
           </div>

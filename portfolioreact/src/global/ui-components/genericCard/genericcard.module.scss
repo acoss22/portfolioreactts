@@ -2,7 +2,10 @@
 
 .card {
   height: 100%;
-  
+  margin: 1rem 0;
+  background-color: $color-white;
+  border-radius: 2rem;
+
   .project {
     border-radius: 2rem;
     display: flex;
@@ -15,8 +18,7 @@
     height: 100%;
 
     .cardBody{
-    
-    
+      padding:1rem;
     }
 
     .marginRight {
@@ -27,8 +29,6 @@
       font-weight: 600;
     }
 
-    .description {
-    }
 
     .tagList {
       display: flex;
